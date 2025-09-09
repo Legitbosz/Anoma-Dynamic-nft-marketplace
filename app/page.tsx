@@ -228,7 +228,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="border-t border-border mt-8 pt-8 text-center">
-            <Badge className="mb-4 bg-red-600 text-white hover:bg-red-700 transition-colors shadow-lg shadow-red-600/20">
+            <Badge className="mb-4 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20">
               Powered by Anoma Protocol
             </Badge>
             <div className="text-sm text-muted-foreground font-body">
