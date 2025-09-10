@@ -79,9 +79,9 @@
 }
 
 @theme inline {
-  /* Reverted font variables back to original Geist fonts */
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Updated font variables to match new Inter and JetBrains Mono imports */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
   --font-body: var(--font-manrope);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
