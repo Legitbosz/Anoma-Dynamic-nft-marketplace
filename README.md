@@ -41,7 +41,7 @@ A next-generation NFT trading protocol that moves beyond static order books by e
 
 ## 🌐 User Experience  
 
-- **“Set and forget” trading** – system executes when optimal conditions are met.  
+- **Set and forget trading** – system executes when optimal conditions are met.  
 - Works for both **casual collectors** and **professional traders**.  
 - Creates more **efficient, liquid, and user-friendly** NFT markets.  
 
