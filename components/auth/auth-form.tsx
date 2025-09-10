@@ -9,8 +9,10 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Separator } from "@/components/ui/separator"
-import { Wallet, Mail, Lock, User, ArrowRight } from "lucide-react"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
+import { Wallet, Mail, Lock, User, ArrowRight, ChevronDown } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function AuthForm() {
   const [isLoading, setIsLoading] = useState(false)
@@ -22,6 +24,32 @@ export function AuthForm() {
     await new Promise((resolve) => setTimeout(resolve, 2000))
     setIsLoading(false)
   }
+
+  const handleWalletConnect = async (walletType: string) => {
+    setIsLoading(true)
+    console.log(`Connecting to ${walletType} wallet...`)
+    // Simulate wallet connection
+    await new Promise((resolve) => setTimeout(resolve, 2000))
+    setIsLoading(false)
+  }
+
+  const walletOptions = [
+    {
+      name: "MetaMask",
+      logo: "/wallets/metamask-logo.jpg",
+      description: "Connect using MetaMask wallet",
+    },
+    {
+      name: "Rabby",
+      logo: "/wallets/rabby-logo.jpg",
+      description: "Connect using Rabby wallet",
+    },
+    {
+      name: "OKX Wallet",
+      logo: "/wallets/okx-logo.jpg",
+      description: "Connect using OKX wallet",
+    },
+  ]
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 bg-gradient-to-br from-background to-muted/20">
@@ -113,15 +141,36 @@ export function AuthForm() {
 
           <div className="mt-6">
             <Separator className="my-4" />
-            <Button
-              variant="outline"
-              className="w-full bg-transparent"
-              onClick={() => setIsLoading(true)}
-              disabled={isLoading}
-            >
-              <Wallet className="mr-2 h-4 w-4" />
-              Connect Wallet
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="outline" className="w-full bg-transparent" disabled={isLoading}>
+                  <Wallet className="mr-2 h-4 w-4" />
+                  Connect Wallet
+                  <ChevronDown className="ml-2 h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="w-full min-w-[300px]" align="center">
+                {walletOptions.map((wallet) => (
+                  <DropdownMenuItem
+                    key={wallet.name}
+                    onClick={() => handleWalletConnect(wallet.name)}
+                    className="flex items-center gap-3 p-3 cursor-pointer hover:bg-muted/50"
+                  >
+                    <Image
+                      src={wallet.logo || "/placeholder.svg"}
+                      alt={`${wallet.name} logo`}
+                      width={24}
+                      height={24}
+                      className="rounded-sm"
+                    />
+                    <div className="flex flex-col">
+                      <span className="font-medium">{wallet.name}</span>
+                      <span className="text-xs text-muted-foreground">{wallet.description}</span>
+                    </div>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           <p className="text-xs text-muted-foreground text-center mt-4 font-body">
