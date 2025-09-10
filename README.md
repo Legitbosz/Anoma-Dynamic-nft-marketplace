@@ -49,4 +49,4 @@ A next-generation NFT trading protocol that moves beyond static order books by e
 
 ## 🚀 Conclusion  
 
-**Dynamic Intent Matching** transforms NFT marketplaces into intelligent, proactive systems — unlocking the next era of NFT trading.  
+**Dynamic Intent Matching** transforms NFT marketplaces into intelligent, proactive systems unlocking the next era of NFT trading.  
