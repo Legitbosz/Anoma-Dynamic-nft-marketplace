@@ -1,4 +1,4 @@
-# Dynamic NFT Marketplace with Intent Matching  
+# Anoma Dynamic NFT Marketplace with Intent Matching  
 
 A next-generation NFT trading protocol that moves beyond static order books by enabling **intent-driven, automated, and intelligent NFT trading**.  
 
