@@ -27,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${manrope.variable} relative`}>
         <div
-          className="fixed inset-0 pointer-events-none z-0 opacity-5"
+          className="fixed inset-0 pointer-events-none z-0 opacity-15"
           style={{
             backgroundImage: "url(/anoma-logo-bg.jpg)",
             backgroundSize: "400px 400px",
