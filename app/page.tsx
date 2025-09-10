@@ -10,8 +10,8 @@ export default function HomePage() {
       <header className="border-b border-red-900/20 bg-black/95 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-8 h-8 rounded-lg object-cover" />
-            <span className="text-xl font-bold text-white">Anoma NFT</span>
+            <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-8 h-8 rounded-lg object-cover" />
+            <span className="text-xl font-bold text-white">Anoma Dynamic NFT</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/marketplace" className="text-gray-300 hover:text-red-500 transition-colors">
@@ -72,10 +72,12 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="border-border/50 hover:border-primary/20 transition-colors">
               <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-6 h-6 rounded object-cover" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-6 h-6 rounded object-cover" />
+                  </div>
+                  <CardTitle>Intent Expression</CardTitle>
                 </div>
-                <CardTitle>Intent Expression</CardTitle>
                 <CardDescription className="font-body">
                   Describe complex trading desires in natural language. Our AI matches your intent with optimal
                   opportunities.
@@ -85,10 +87,12 @@ export default function HomePage() {
 
             <Card className="border-border/50 hover:border-primary/20 transition-colors">
               <CardHeader>
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-6 h-6 text-secondary" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center">
+                    <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-6 h-6 text-secondary" />
+                  </div>
+                  <CardTitle>Multi-Party Trades</CardTitle>
                 </div>
-                <CardTitle>Multi-Party Trades</CardTitle>
                 <CardDescription className="font-body">
                   Execute complex trades involving multiple parties without requiring direct matches between traders.
                 </CardDescription>
@@ -97,10 +101,12 @@ export default function HomePage() {
 
             <Card className="border-border/50 hover:border-primary/20 transition-colors">
               <CardHeader>
-                <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-6 h-6 text-accent" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
+                    <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-6 h-6 text-accent" />
+                  </div>
+                  <CardTitle>Trustless Execution</CardTitle>
                 </div>
-                <CardTitle>Trustless Execution</CardTitle>
                 <CardDescription className="font-body">
                   All trades are secured by smart contracts and executed atomically. Your assets are always protected.
                 </CardDescription>
@@ -109,10 +115,12 @@ export default function HomePage() {
 
             <Card className="border-border/50 hover:border-primary/20 transition-colors">
               <CardHeader>
-                <div className="w-12 h-12 bg-chart-4/10 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-6 h-6 text-chart-4" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-chart-4/10 rounded-lg flex items-center justify-center">
+                    <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-6 h-6 text-chart-4" />
+                  </div>
+                  <CardTitle>Rarity Matching</CardTitle>
                 </div>
-                <CardTitle>Rarity Matching</CardTitle>
                 <CardDescription className="font-body">
                   Trade based on rarity scores, floor prices, and collection metrics for fair value exchanges.
                 </CardDescription>
@@ -121,10 +129,12 @@ export default function HomePage() {
 
             <Card className="border-border/50 hover:border-primary/20 transition-colors">
               <CardHeader>
-                <div className="w-12 h-12 bg-chart-2/10 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-6 h-6 text-chart-2" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-chart-2/10 rounded-lg flex items-center justify-center">
+                    <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-6 h-6 text-chart-2" />
+                  </div>
+                  <CardTitle>DAO Integration</CardTitle>
                 </div>
-                <CardTitle>DAO Integration</CardTitle>
                 <CardDescription className="font-body">
                   Exchange NFTs for governance tokens and voting power in your favorite DAOs.
                 </CardDescription>
@@ -133,10 +143,12 @@ export default function HomePage() {
 
             <Card className="border-border/50 hover:border-primary/20 transition-colors">
               <CardHeader>
-                <div className="w-12 h-12 bg-chart-5/10 rounded-lg flex items-center justify-center mb-4">
-                  <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-6 h-6 text-chart-5" />
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 bg-chart-5/10 rounded-lg flex items-center justify-center">
+                    <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-6 h-6 text-chart-5" />
+                  </div>
+                  <CardTitle>Instant Settlement</CardTitle>
                 </div>
-                <CardTitle>Instant Settlement</CardTitle>
                 <CardDescription className="font-body">
                   Trades execute instantly when matches are found, with automatic asset transfers and notifications.
                 </CardDescription>
@@ -165,8 +177,8 @@ export default function HomePage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-6 h-6 rounded object-cover" />
-                <span className="font-bold">Anoma NFT</span>
+                <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-6 h-6 rounded object-cover" />
+                <span className="font-bold">Anoma Dynamic NFT</span>
               </div>
               <p className="text-sm text-muted-foreground font-body">The future of intent-based NFT trading</p>
             </div>
@@ -236,7 +248,7 @@ export default function HomePage() {
               Powered by Anoma Protocol
             </Badge>
             <div className="text-sm text-muted-foreground font-body">
-              © 2024 Anoma NFT Marketplace. All rights reserved.
+              © 2024 Anoma Dynamic NFT Marketplace. All rights reserved.
             </div>
           </div>
         </div>

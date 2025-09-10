@@ -27,8 +27,8 @@ export default function CreateIntentPage() {
           <div className="container mx-auto px-4 py-4 flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Link href="/" className="flex items-center gap-2">
-                <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-8 h-8 rounded-lg object-cover" />
-                <span className="text-xl font-bold">Anoma NFT</span>
+                <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-8 h-8 rounded-lg object-cover" />
+                <span className="text-xl font-bold">Anoma Dynamic NFT</span>
               </Link>
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function CreateIntentPage() {
               </Link>
             </Button>
             <div className="flex items-center gap-2">
-              <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-8 h-8 rounded-lg object-cover" />
+              <img src="/wizard-logo.jpg" alt="Anoma Dynamic NFT Logo" className="w-8 h-8 rounded-lg object-cover" />
               <span className="text-xl font-bold">Create Intent</span>
             </div>
           </div>

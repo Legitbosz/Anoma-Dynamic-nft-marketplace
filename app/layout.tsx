@@ -13,7 +13,7 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: "Anoma NFT Marketplace",
+  title: "Anoma Dynamic NFT Marketplace",
   description: "Dynamic NFT marketplace with intent matching for complex multi-party trades",
   generator: "v0.app",
 }

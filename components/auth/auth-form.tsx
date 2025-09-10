@@ -30,7 +30,7 @@ export function AuthForm() {
           <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
             <Wallet className="w-6 h-6 text-primary-foreground" />
           </div>
-          <CardTitle className="text-2xl">Welcome to Anoma NFT</CardTitle>
+          <CardTitle className="text-2xl">Welcome to Anoma Dynamic NFT</CardTitle>
           <CardDescription className="font-body">
             Connect your wallet or create an account to start trading with intents
           </CardDescription>
