@@ -5,30 +5,34 @@ import Link from "next/link"
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-br from-background via-muted/20 to-primary/5">
       {/* Header */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
+      <header className="border-b border-red-900/20 bg-black/95 backdrop-blur-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <img src="/wizard-logo.jpg" alt="Anoma NFT Logo" className="w-8 h-8 rounded-lg object-cover" />
-            <span className="text-xl font-bold">Anoma NFT</span>
+            <span className="text-xl font-bold text-white">Anoma NFT</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
-            <Link href="/marketplace" className="text-muted-foreground hover:text-red-500 transition-colors">
+            <Link href="/marketplace" className="text-gray-300 hover:text-red-500 transition-colors">
               Marketplace
             </Link>
-            <Link href="/intents" className="text-muted-foreground hover:text-red-500 transition-colors">
+            <Link href="/intents" className="text-gray-300 hover:text-red-500 transition-colors">
               My Intents
             </Link>
-            <Link href="/dao" className="text-muted-foreground hover:text-red-500 transition-colors">
+            <Link href="/dao" className="text-gray-300 hover:text-red-500 transition-colors">
               DAO Hub
             </Link>
           </nav>
           <div className="flex items-center gap-3">
-            <Button variant="outline" asChild>
+            <Button
+              variant="outline"
+              className="border-red-500 text-red-500 hover:bg-red-500 hover:text-white bg-transparent"
+              asChild
+            >
               <Link href="/auth/signin">Sign In</Link>
             </Button>
-            <Button asChild>
+            <Button className="bg-red-600 hover:bg-red-700" asChild>
               <Link href="/auth/signup">Get Started</Link>
             </Button>
           </div>
@@ -36,12 +40,12 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="py-20 px-4">
+      <section className="py-20 px-4 bg-white">
         <div className="container mx-auto text-center max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance text-gray-900">
             Express Your Trading <span className="text-primary">Intent</span>
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 font-body text-pretty max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mb-8 font-body text-pretty max-w-2xl mx-auto">
             Trade NFTs with complex intents like "Exchange my gaming collection for art NFTs of similar rarity" or "Swap
             my tokens for DAO governance power." No direct matches required.
           </p>
