@@ -1,21 +1,19 @@
 import type React from "react"
 import type { Metadata } from "next"
-// Replaced geist font imports with standard Google Fonts
-import { Inter } from "next/font/google"
-import { JetBrains_Mono } from "next/font/google"
+import { Geist, Geist_Mono } from "next/font/google"
 import { Manrope } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 
-const inter = Inter({
+const geistSans = Geist({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-geist-sans",
 })
 
-const jetbrainsMono = JetBrains_Mono({
+const geistMono = Geist_Mono({
   subsets: ["latin"],
-  variable: "--font-jetbrains-mono",
+  variable: "--font-geist-mono",
 })
 
 const manrope = Manrope({
@@ -36,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable} ${jetbrainsMono.variable} ${manrope.variable} relative`}>
+      <body className={`font-sans ${geistSans.variable} ${geistMono.variable} ${manrope.variable} relative`}>
         <div
           className="fixed inset-0 pointer-events-none z-0 opacity-15"
           style={{
