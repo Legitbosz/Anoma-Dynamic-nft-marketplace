@@ -1,7 +1,5 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-@import "inter";
-@import "jetbrains-mono";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -79,10 +77,9 @@
 }
 
 @theme inline {
-  /* Updated font variables to match new Inter and JetBrains Mono imports */
-  --font-sans: var(--font-inter);
-  --font-mono: var(--font-jetbrains-mono);
-  --font-body: var(--font-manrope);
+  /* Updated font variables to use system fonts instead of custom imports */
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas, "Liberation Mono", Menlo, monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -127,9 +124,5 @@
   }
   body {
     @apply bg-background text-foreground;
-  }
-  /* Added body text font class */
-  .font-body {
-    font-family: var(--font-body);
   }
 }
